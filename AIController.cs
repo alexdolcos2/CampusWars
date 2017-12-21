@@ -7,8 +7,7 @@ public class AIController : MonoBehaviour {
 	/// <summary>
 	/// Simple controller for AI which is responsible for remembering shooted/hitted tiles, target tile selection,
 	/// missile shooting, turn switching and more...
-	/// 
-	/// AI counts tile indexs from 0 to 63, instead of 1 to 64 !!
+	///
 	/// </summary>
 
 	public List<int> shootedTiles;		//tiles that enemy AI has shot
@@ -114,15 +113,6 @@ public class AIController : MonoBehaviour {
 		}
 	}
 
-	/// <summary>
-	/// Search for a unique (new) tile on the map and return the result.
-	/// Please note that this is a very simple target selection routine and is not using any brain to
-	/// shoot near a tile which has been shot before. 
-	/// 
-	/// We will update this function to be able to shoot cleverly and sink player ships with as few shoots as possible.
-	/// 
-	/// </summary>
-	/// <returns>a unique tile : GameObject</returns>
 	public GameObject getUniqueTargetTile() {
 
 		GameObject target = null;
